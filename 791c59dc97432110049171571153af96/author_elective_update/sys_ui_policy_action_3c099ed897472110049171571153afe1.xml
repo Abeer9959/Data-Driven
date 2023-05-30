@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>conditions</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 21:00:56</sys_created_on>
+        <sys_id>3c099ed897472110049171571153afe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>conditions</sys_name>
+        <sys_package display_value="Data Driven Request Fulfillment" source="x_953151_dd_rf">791c59dc97432110049171571153af96</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Data Driven Request Fulfillment">791c59dc97432110049171571153af96</sys_scope>
+        <sys_update_name>sys_ui_policy_action_3c099ed897472110049171571153afe1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 21:00:56</sys_updated_on>
+        <table>x_953151_dd_rf_fulfillment_step</table>
+        <ui_policy display_value="Create UI Policy to display the section only if conditional = true (g_form.setSectionDisplay('conditions', true); ">eb94169497472110049171571153af81</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Data Driven Request Fulfillment">791c59dc97432110049171571153af96</application>
+        <file_path/>
+        <instance_id>3fd8d5ffdb936c50d5c911f848961902</instance_id>
+        <instance_name>dev111218</instance_name>
+        <name>sys_ui_policy_action_3c099ed897472110049171571153afe1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>conditions</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-22 21:00:56</sys_created_on><sys_id>3c099ed897472110049171571153afe1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>conditions</sys_name><sys_package display_value="Data Driven Request Fulfillment" source="x_953151_dd_rf">791c59dc97432110049171571153af96</sys_package><sys_policy/><sys_scope display_value="Data Driven Request Fulfillment">791c59dc97432110049171571153af96</sys_scope><sys_update_name>sys_ui_policy_action_3c099ed897472110049171571153afe1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-22 21:00:56</sys_updated_on><table>x_953151_dd_rf_fulfillment_step</table><ui_policy display_value="Create UI Policy to display the section only if conditional = true (g_form.setSectionDisplay('conditions', true); ">eb94169497472110049171571153af81</ui_policy><visible>true</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1747981261</payload_hash>
+        <record_name>conditions</record_name>
+        <reverted_from/>
+        <source>fb5fa91497c32110049171571153afc2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 21:00:56</sys_created_on>
+        <sys_id>6709161897472110049171571153afdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1884543e1db0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 21:00:56</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>af091618f24721105f495b4e328e80dc</update_guid>
+        <update_guid_history>af091618f24721105f495b4e328e80dc:1747981261</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 21:02:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>142d72fad4a64dfc9d1343963728f004</sys_id>
+        <sys_metadata>3c099ed897472110049171571153afe1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>conditions</sys_name>
+        <sys_package display_value="Data Driven Request Fulfillment" source="x_953151_dd_rf">791c59dc97432110049171571153af96</sys_package>
+        <sys_parent display_value="UI Policy to display the section only if conditional = true (g_form.setSectionDisplay('conditions', true); ">eb94169497472110049171571153af81</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Data Driven Request Fulfillment">791c59dc97432110049171571153af96</sys_scope>
+        <sys_scope_delete display_value="">22e87eda3af54cdcaf59ca00c28735f1</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_3c099ed897472110049171571153afe1</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_3c099ed897472110049171571153afe1">6709161897472110049171571153afdd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 21:02:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

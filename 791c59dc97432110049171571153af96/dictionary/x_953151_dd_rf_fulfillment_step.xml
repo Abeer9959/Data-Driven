@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="755279d497c32110049171571153afdc" extends="sys_metadata" label="Fulfillment Step" max_length="40" name="x_953151_dd_rf_fulfillment_step" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Approval From Attribute" max_length="160" name="approval_from_attribure" type="string"/>
+        <element attributes="encode_utf8=false" label="Approval Group" max_length="32" name="approval_group" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Approval Type" max_length="40" name="approval_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="User" sequence="0" value="user"/>
+                <element inactive_on_update="false" label="Group" sequence="1" value="group"/>
+                <element inactive_on_update="false" label="Manager" sequence="2" value="manager"/>
+                <element inactive_on_update="false" label="From Attribute" sequence="3" value="from_attribute"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Approval User" max_length="32" name="approval_user" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" reference_qual="active=true^typeLIKE1cb8ab9bff500200158bffffffffff62^EQ" reference_qual_condition="active=true^typeLIKE1cb8ab9bff500200158bffffffffff62^EQ" type="reference"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="BCC" max_length="1024" name="bcc" reference="u_data_lookup" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="BCC (direct e-mail)" max_length="1000" name="bcc_direct" type="string"/>
+        <element attributes="encode_utf8=false" label="Catalog Item Configuration" mandatory="true" max_length="32" name="catalog_item_configuration" reference="x_953151_dd_rf_catalog_item_configuration" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="CC" max_length="1024" name="cc" reference="u_data_lookup" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="CC (direct e-mail)" max_length="1000" name="cc_direct" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Close notes on success" mandatory="true" max_length="4000" name="close_notes" type="string"/>
+        <element label="Conditional" max_length="40" name="conditional" type="boolean"/>
+        <element dependent="conditions_table" dependent_on_field="conditions_table" label="Conditions" max_length="4000" name="conditions" type="conditions" use_dependent_field="true"/>
+        <element attributes="base_start=true" default="sc_task" label="Conditions table" max_length="80" name="conditions_table" read_only="true" type="table_name"/>
+        <element attributes="edge_encryption_enabled=true" label="SC Task Short Description" max_length="160" name="c_task_short_description" type="string"/>
+        <element attributes="encode_utf8=false" label="Delivery Flow" max_length="32" name="delivery_flow" reference="sys_hub_flow" reference_qual="active=true^type=subflow^EQ" reference_qual_condition="active=true^type=subflow^EQ" type="reference"/>
+        <element label="Delivery Flow Parameters" max_length="4000" name="delivery_flow_parms" type="simple_name_values"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element label="Message body" max_length="65536" name="message_body" type="html"/>
+        <element attributes="encode_utf8=false" label="Notification format" mandatory="true" max_length="32" name="notification_format" reference="sys_email_layout" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Order" mandatory="true" max_length="40" name="order" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="SC Task Description" max_length="4000" name="sc_task_description" type="string"/>
+        <element attributes="encode_utf8=false" label="Service Offering" max_length="32" name="service_offering" reference="service_offering" reference_qual="life_cycle_stage=Operational^EQ" reference_qual_condition="life_cycle_stage=Operational^EQ" type="reference"/>
+        <element attributes="encode_utf8=false" label="SLA Definition" max_length="32" name="sla_definition" reference="contract_sla" reference_qual="collection=catalog task^active=true^EQ" reference_qual_condition="collection=catalog task^active=true^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Fulifillment Step Type" mandatory="true" max_length="40" name="step_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Approval" sequence="0" value="approval"/>
+                <element inactive_on_update="false" label="Catalog Task" sequence="1" value="catalog_task"/>
+                <element inactive_on_update="false" label="Notification" sequence="2" value="notification"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Subject" max_length="160" name="subject" type="string"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="To" max_length="1024" name="to" reference="u_data_lookup" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="To (direct e-mail)" max_length="1000" name="to_direct" type="string"/>
+        <element label="New True/False" max_length="40" name="u_boolean_6" type="boolean"/>
+        <element label="New True/False" max_length="40" name="u_boolean_7" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_5" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_8" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element label="New Integer" max_length="40" name="u_integer_11" type="integer"/>
+        <element attributes="encode_utf8=false" label="New Reference" max_length="32" name="u_reference_1" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="encode_utf8=false" label="New Reference" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_10" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_9" type="string"/>
+        <element attributes="encode_utf8=false" label="Work instructions" max_length="32" name="work_instructions" reference="kb_knowledge" reference_qual="workflow_state=published^EQ" reference_qual_condition="workflow_state=published^EQ" type="reference"/>
+        <index name="index">
+            <element name="approval_group"/>
+        </index>
+        <index name="index2">
+            <element name="approval_user"/>
+        </index>
+        <index name="index3">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index4">
+            <element name="catalog_item_configuration"/>
+        </index>
+        <index name="index5">
+            <element name="delivery_flow"/>
+        </index>
+        <index name="index6">
+            <element name="notification_format"/>
+        </index>
+        <index name="index7">
+            <element name="service_offering"/>
+        </index>
+        <index name="index8">
+            <element name="sla_definition"/>
+        </index>
+        <index name="index9">
+            <element name="u_reference_1"/>
+        </index>
+        <index name="index10">
+            <element name="u_reference_2"/>
+        </index>
+        <index name="index11">
+            <element name="work_instructions"/>
+        </index>
+    </element>
+</database>
